@@ -5,6 +5,6 @@ def square_matrix_simple(matrix=[]):
 
     squares = []
     for n in matrix:
-        squares.append(list(map(power_2, i)))
+        squares.append(list(map(power_2, n)))
 
     return squares
