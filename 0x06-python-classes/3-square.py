@@ -2,16 +2,17 @@
 """class Square that defines a square"""
 
 
-class Square():
-    """square class with its proper validation and size"""
-
+class Square:
+    """define"""
     def __init__(self, size=0):
-        if (type(size) is not int):
-            raise TypeError("size must be an integer")
-        elif (size < 0):
+        """initialize data"""
+        if isinstance(size, int):
+            self.__size = size
+        elif size < 0:
             raise ValueError("size must be >= 0")
         else:
-        self.__size = size
+            raise TypeError("size must be an integer")
 
     def area(self):
-        return self.__size ** 2    
+        """returns the area of the square"""
+        return self.__size ** 2
