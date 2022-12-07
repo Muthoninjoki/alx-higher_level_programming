@@ -14,6 +14,6 @@ if __name__ == "__main__":
 		LIKE BINARY 'N%' ORDER BY states.id""")
     rows = cur.fetchall()
     for row in rows:
-	print(row)
+        print(row)
     cur.close()
     db.close()
