@@ -1,4 +1,3 @@
 #!/bin/bash
-#Bash script that takes in a URL, sends a GET request to the URL
-#displays the body of the response
+# Bash script that takes in a URL displaying only 200 status code
 curl -sL "$1"
