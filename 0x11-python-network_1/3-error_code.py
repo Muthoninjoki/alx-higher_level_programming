@@ -1,5 +1,9 @@
 #!/usr/bin/python3
-"""takes in a URL, sends a request to the URL and displays the body of the response"""
+"""
+Takes in a URL, sends a request to the URL and displays the body of the response
+It also handles urllib.error.HTTPError exceptions and prints the http status code
+"""
+
 import sys
 import urllib.error
 import urllib.request
@@ -8,7 +12,7 @@ import urllib.request
 if __name__ == "__main__":
     url = sys.argv[1]
 
-    request = urlib.request.Request(url)
+    request = urllib.request.Request(url)
     try:
         with urllib.request.urlopen(request) as response:
             print(response.read().decode("ascii"))
