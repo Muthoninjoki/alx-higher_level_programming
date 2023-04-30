@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 """
-Takes in a URL, sends a request to the URL and displays the body of the response
-It also handles urllib.error.HTTPError exceptions and prints the http status code
+Takes in a URL, sends a request to the URL and
+displays the body of the response. It also handles
+urllib.error.HTTPError exceptions and prints the http status code
 """
 
 import sys
